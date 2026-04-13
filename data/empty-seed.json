@@ -1,10 +1,90 @@
 {
-  "users": [],
-  "contacts": [],
-  "bankaccounts": [],
-  "transactions": [],
-  "likes": [],
-  "comments": [],
-  "notifications": [],
-  "banktransfers": []
+  "users": [
+    {
+      "id": 1,
+      "name": "João Silva",
+      "email": "joao@email.com"
+    },
+    {
+      "id": 2,
+      "name": "Maria Souza",
+      "email": "maria@email.com"
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "contactUserId": 2
+    }
+  ],
+  "bankaccounts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "balance": 900
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "balance": 600
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "accountId": 1,
+      "type": "debit",
+      "amount": 100,
+      "description": "Transferência enviada"
+    },
+    {
+      "id": 2,
+      "accountId": 2,
+      "type": "credit",
+      "amount": 100,
+      "description": "Transferência recebida"
+    }
+  ],
+  "likes": [
+    {
+      "id": 1,
+      "userId": 2,
+      "transactionId": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "userId": 2,
+      "transactionId": 2,
+      "text": "Obrigado!"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "userId": 1,
+      "message": "Você enviou R$100 para Maria",
+      "read": false
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "message": "Você recebeu R$100 de João",
+      "read": false
+    }
+  ],
+  "banktransfers": [
+    {
+      "id": 1,
+      "fromAccountId": 1,
+      "toAccountId": 2,
+      "amount": 100
+    }
+  ]
 }
+
+
+
+
