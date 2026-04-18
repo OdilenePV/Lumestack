@@ -9,7 +9,7 @@ import {
   removeContactById,
   getContactsByUserId,
 } from "../../backend/database";
-import { User } from "../../src/models/user";
+import { User } from "../models/user";
 import { totalContacts, contactsPerUser } from "../../scripts/seedDataUtils";
 describe("Contacts", () => {
   beforeEach(() => {

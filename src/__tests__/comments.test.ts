@@ -8,7 +8,7 @@ import {
   getCommentsByTransactionId,
 } from "../../backend/database";
 
-import { User, Transaction } from "../../src/models";
+import { User, Transaction } from "../models";
 
 describe("Comments", () => {
   beforeEach(() => {
