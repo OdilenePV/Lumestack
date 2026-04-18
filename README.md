@@ -103,6 +103,16 @@ PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn install
 yarn dev
 ```
 
+ ### Run the app
+
+```start coverage/index.html
+npx serve coverage
+yarn cypress:run
+```
+# Executar testes
+yarn cypress:open --env coverage=true
+yarn cypress:run --browser chrome --headed --env coverage=true
+
 > 🚩 **Note**
 >
 > The app will run on port `3000` (frontend) and `3001` (API backend) by default. Please make sure there are no other applications or services running on both ports.
